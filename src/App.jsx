@@ -32,6 +32,9 @@ import UploadFileIcon from '@mui/icons-material/UploadFile';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import InfoIcon from '@mui/icons-material/Info';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import HelpModal from './components/HelpModal';
 
 // --- 1. THEME DEFINITION ---
 
@@ -377,6 +380,7 @@ const App = () => {
     const [manifestData, setManifestData] = useState(null);
     const [error, setError] = useState(null);
     const [fileType, setFileType] = useState('');
+    const [helpOpen, setHelpOpen] = useState(false);
 
     const handleFileUpload = (event) => {
         const file = event.target.files[0];
@@ -405,7 +409,6 @@ const App = () => {
                 setManifestData(null);
             }
         };
-        
         reader.readAsText(file);
     };
 
@@ -413,23 +416,30 @@ const App = () => {
         if (!manifestData) return;
         try {
             const igmText = convertJSONToIGMText(manifestData);
-            const jobNo = manifestData.master.decRef.jobNo || 'Unknown';
-            downloadIGMText(igmText, jobNo);
-        } catch (e) {
-            setError(`Export failed: Could not convert JSON to IGM Text. ${e.message}`);
+            downloadIGMText(igmText, manifestData.master.decRef.jobNo);
+        } catch (err) {
+            console.error(err);
+            setError(`Failed to export file. Details: ${err.message}`);
         }
     };
 
     const totals = useMemo(() => {
         if (!manifestData) return { containers: 0, weight: 0 };
+
         let totalContainers = 0;
         let totalWeight = 0;
+
         manifestData.master.mastrCnsgmtDec.forEach(mc => {
             if (mc.trnsprtEqmt) {
                 totalContainers += mc.trnsprtEqmt.length;
-                mc.trnsprtEqmt.forEach(eq => {totalWeight += eq.cntrWeight || 0;});
+                mc.trnsprtEqmt.forEach(eq => {
+                    if (eq.cntrWeight) {
+                        totalWeight += eq.cntrWeight;
+                    }
+                });
             }
         });
+
         return { containers: totalContainers, weight: totalWeight };
     }, [manifestData]);
 
@@ -437,21 +447,8 @@ const App = () => {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
-            <Box sx={{ minHeight: '100vh', bgcolor: 'background.default' }}>
-                <AppBar position="sticky" elevation={3} sx={{ background: themeMode === 'dark' ? 'linear-gradient(90deg, #d32f2f 60%, #b71c1c 100%)' : 'linear-gradient(90deg, #ff5252 60%, #fff 100%)' }}>
-                    <Toolbar>
-                        <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2, display: { xs: 'flex', md: 'none' } }}>
-                            <MenuIcon />
-                        </IconButton>
-                        <LocalShippingIcon sx={{ mr: 1, fontSize: 32 }} />
-                        <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: 700, letterSpacing: 1, fontSize: { xs: 18, sm: 22 } }}>
-                            ICEGATE Universal Manifest Parser
-                        </Typography>
-                        <IconButton sx={{ ml: 1 }} color="inherit" onClick={() => setThemeMode(themeMode === 'dark' ? 'light' : 'dark')}>
-                            {themeMode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
-                        </IconButton>
-                    </Toolbar>
-                </AppBar>
+            <NavBar themeMode={themeMode} setThemeMode={setThemeMode} />
+            <Box sx={{ minHeight: '70vh', bgcolor: 'background.default' }}>
                 <Container maxWidth="lg" sx={{ py: { xs: 2, sm: 5 } }}>
                     <Grid container spacing={4} justifyContent="center">
                         <Grid item xs={12} md={10} lg={8}>
@@ -480,7 +477,7 @@ const App = () => {
                                     <Box sx={{ textAlign: 'right', mb: 2 }}>
                                         <Button
                                             variant="contained"
-                                            color="secondary" // Changed to secondary for better contrast with dark red primary
+                                            color="secondary"
                                             size="large"
                                             startIcon={<UploadFileIcon />}
                                             onClick={handleExport}
@@ -529,7 +526,6 @@ const App = () => {
                                         <AssignmentIcon color="primary" /> Master Consignments
                                     </Typography>
                                     {manifestData.master.mastrCnsgmtDec.map((mc, index) => (
-                                        // MBLCard is a reusable Card component now, wrapping it directly is sufficient
                                         <MBLCard key={index} mc={mc} />
                                     ))}
                                 </Grid>
@@ -538,6 +534,8 @@ const App = () => {
                     )}
                 </Container>
             </Box>
+            <Footer setHelpOpen={setHelpOpen} />
+            <HelpModal open={helpOpen} handleClose={() => setHelpOpen(false)} />
         </ThemeProvider>
     );
 };
