@@ -1,0 +1,434 @@
+{
+  "headerField" : {
+    "senderID" : "AAACO2555KCSA009",
+    "receiverID" : "INCCU1",
+    "versionNo" : "SCE1102",
+    "indicator" : "P",
+    "messageID" : "SACHM22",
+    "sequenceOrControlNumber" : 1,
+    "date" : "20251015",
+    "time" : "T10:35",
+    "reportingEvent" : "SCE"
+  },
+  "master" : {
+    "decRef" : {
+      "msgTyp" : "F",
+      "prtofRptng" : "INCCU1",
+      "jobNo" : 1,
+      "jobDt" : "20251015",
+      "rptngEvent" : "SCE"
+    },
+    "authPrsn" : {
+      "sbmtrTyp" : "ASA",
+      "sbmtrCd" : "AAACO2555K",
+      "authReprsntvCd" : "AIQPG5081M"
+    },
+    "vesselDtls" : {
+      "modeOfTrnsprt" : "1",
+      "typOfTrnsprtMeans" : "10",
+      "trnsprtMeansId" : "9160982"
+    },
+    "voyageDtls" : {
+      "cnvnceRefNmbr" : "CCU12025100535",
+      "totalNoOfTrnsprtEqmtMnfsted" : 15,
+      "totalNmbrOfLines" : 3
+    },
+    "mastrCnsgmtDec" : [ {
+      "MCRef" : {
+        "lineNo" : 1,
+        "mstrBlNo" : "DURCCU95252",
+        "mstrBlDt" : "20250829",
+        "consolidatedIndctr" : "S",
+        "prevDec" : "N",
+        "consolidatorPan" : "PAN:AAACO2555K"
+      },
+      "locCstm" : {
+        "firstPrtOfEntry" : "INCCU1",
+        "destPrt" : "INCCU1CIL2",
+        "nxtPrtOfUnlading" : "INCCU1",
+        "typOfCrgo" : "IM",
+        "itemTyp" : "OT",
+        "crgoMvmt" : "LC",
+        "natrOfCrgo" : "C"
+      },
+      "trnshpr" : {
+        "trnshprBond" : "2002381469"
+      },
+      "trnsprtDoc" : {
+        "prtOfAcptCdd" : "ZADUR",
+        "prtOfAcptName" : "Durban",
+        "prtOfReceiptCdd" : "INCCU1",
+        "prtOfReceiptName" : "Kolkata",
+        "cnsgnrsName" : "SASOL CHEMICALS A DIVISION OF SASOL",
+        "cnsgnrStreetAddress" : "SOUTH AFRICA LTDCOMPANY REG NO 196801391406 VAT REG NO 4430113102 PO B",
+        "cnsgnrCity" : "JOHANNESBURG",
+        "cnsgnrCntrySubDivName" : "JOHANNESBURG",
+        "cnsgnrCntryCd" : "ZA",
+        "cnsgnrPstcd" : "5486",
+        "cnsgnesName" : "CENTURY PLYBOARDS I LTD",
+        "cnsgnesCd" : "AABCC1682J",
+        "typOfCd" : "PAN",
+        "cnsgneStreetAddress" : "DIAMOND HARBOUR ROADKANCHOWKI BISHNUPUR 24 PARGANAS SWEST BENGAL 74350",
+        "cnsgneCity" : "BISHNUPUR",
+        "cnsgneCntrySubDivName" : "WEST BENGAL",
+        "cnsgneCntrySubDiv" : "19",
+        "cnsgneCntryCd" : "IN",
+        "cnsgnePstcd" : "743503",
+        "nameOfAnyOtherNotfdParty" : "CENTURY PLYBOARDS I LTD",
+        "panOfNotfdParty" : "AABCC1682J",
+        "typOfNotfdPartyCd" : "PAN",
+        "notfdPartyStreetAddress" : "DIAMOND HARBOUR ROADKANCHOWKI BISHNUPUR 24 PARGANAS SWEST BENGAL 74350",
+        "notfdPartyCity" : "BISHNUPUR",
+        "notfdPartyCntrySubDivName" : "WEST BENGAL",
+        "notfdPartyCntrySubDiv" : "19",
+        "notfdPartyCntryCd" : "IN",
+        "notfdPartyPstcd" : "743503",
+        "goodsDescAsPerBl" : "04X20 ISOTANK CONTAINER  STC PHENOL BULK HS CODE  290711 IMCO 6.1 PG II UN  NO 2312 IEC 0288037243  GST 19AABCC1682J1ZJ PAN  AABCC1682J"
+      },
+      "trnsprtDocMsr" : {
+        "nmbrOfPkgs" : 4,
+        "typsOfPkgs" : "PKG",
+        "marksNoOnPkgs" : "NM",
+        "grossWeight" : 88840.0,
+        "unitOfWeight" : "KGS"
+      },
+      "itemDtls" : [ {
+        "crgoItemSeqNmbr" : 1,
+        "hsCd" : "290711",
+        "crgoItemDesc" : "PHENOL BULK6.1 UN NO: 2312 PG : II HSCODE : 290711,PHENOL BULK6.1 UN NO: 2312 PG : II HSCODE : 290711,PHENOL BULK6.1 UN NO: 2312 PG : II HSCODE : 290711,PHENOL BULK6.1 UN NO: 2312 PG : II HSCODE : 290711",
+        "unoCd" : "2312",
+        "imdgCd" : "6.1",
+        "nmbrOfPkgs" : 4,
+        "typOfPkgs" : "PKG"
+      } ],
+      "trnsprtEqmt" : [ {
+        "eqmtSeqNo" : 1,
+        "eqmtId" : "EOLU8203233",
+        "eqmtTyp" : "CN",
+        "eqmtSize" : "2270",
+        "eqmtLoadStatus" : "FCL",
+        "eqmtSealNmbr" : "0165255",
+        "socFlag" : "N",
+        "cntrAgntCd" : "AAACO2555K",
+        "cntrWeight" : 22340.0,
+        "totalNmbrOfPkgs" : 1
+      }, {
+        "eqmtSeqNo" : 2,
+        "eqmtId" : "EOLU8400870",
+        "eqmtTyp" : "CN",
+        "eqmtSize" : "2270",
+        "eqmtLoadStatus" : "FCL",
+        "eqmtSealNmbr" : "0165267",
+        "socFlag" : "N",
+        "cntrAgntCd" : "AAACO2555K",
+        "cntrWeight" : 22080.0,
+        "totalNmbrOfPkgs" : 1
+      }, {
+        "eqmtSeqNo" : 3,
+        "eqmtId" : "EOLU8272168",
+        "eqmtTyp" : "CN",
+        "eqmtSize" : "2270",
+        "eqmtLoadStatus" : "FCL",
+        "eqmtSealNmbr" : "0165258",
+        "socFlag" : "N",
+        "cntrAgntCd" : "AAACO2555K",
+        "cntrWeight" : 22070.0,
+        "totalNmbrOfPkgs" : 1
+      }, {
+        "eqmtSeqNo" : 4,
+        "eqmtId" : "EOLU8263778",
+        "eqmtTyp" : "CN",
+        "eqmtSize" : "2270",
+        "eqmtLoadStatus" : "FCL",
+        "eqmtSealNmbr" : "0165270",
+        "socFlag" : "N",
+        "cntrAgntCd" : "AAACO2555K",
+        "cntrWeight" : 22350.0,
+        "totalNmbrOfPkgs" : 1
+      } ],
+      "itnry" : [ {
+        "prtOfCallSeqNmbr" : 1,
+        "prtOfCallCdd" : "ZADUR",
+        "prtOfCallName" : "Durban",
+        "nxtPrtOfCallCdd" : "INCCU1",
+        "nxtPrtOfCallName" : "Kolkata",
+        "modeOfTrnsprt" : "1"
+      } ]
+    }, {
+      "MCRef" : {
+        "lineNo" : 2,
+        "mstrBlNo" : "DURCCU101450",
+        "mstrBlDt" : "20250924",
+        "consolidatedIndctr" : "S",
+        "prevDec" : "N",
+        "consolidatorPan" : "PAN:AAACO2555K"
+      },
+      "locCstm" : {
+        "firstPrtOfEntry" : "INCCU1",
+        "destPrt" : "INCCU1CIL2",
+        "nxtPrtOfUnlading" : "INCCU1",
+        "typOfCrgo" : "IM",
+        "itemTyp" : "OT",
+        "crgoMvmt" : "LC",
+        "natrOfCrgo" : "C"
+      },
+      "trnshpr" : {
+        "trnshprBond" : "2002381469"
+      },
+      "trnsprtDoc" : {
+        "prtOfAcptCdd" : "ZADUR",
+        "prtOfAcptName" : "Durban",
+        "prtOfReceiptCdd" : "INCCU1",
+        "prtOfReceiptName" : "Kolkata",
+        "cnsgnrsName" : "SASOL CHEMICALS A DIVISION OF SASOL",
+        "cnsgnrStreetAddress" : "SOUTH AFRICA LTDCOMPANY REG NO 196801391406 VAT REG NO 4430113102 PO B",
+        "cnsgnrCity" : "JOHANNESBURG",
+        "cnsgnrCntrySubDivName" : "JOHANNESBURG",
+        "cnsgnrCntryCd" : "ZA",
+        "cnsgnrPstcd" : "5486",
+        "cnsgnesName" : "CENTURY PLYBOARDS I LTD",
+        "cnsgnesCd" : "AABCC1682J",
+        "typOfCd" : "PAN",
+        "cnsgneStreetAddress" : "DIAMOND HARBOUR ROADKANCHOWKI BISHNUPUR 24 PARGANAS SWEST BENGAL 74350",
+        "cnsgneCity" : "BISHNUPUR",
+        "cnsgneCntrySubDivName" : "WEST BENGAL",
+        "cnsgneCntrySubDiv" : "19",
+        "cnsgneCntryCd" : "IN",
+        "cnsgnePstcd" : "743503",
+        "nameOfAnyOtherNotfdParty" : "CENTURY PLYBOARDS I LTD",
+        "panOfNotfdParty" : "AABCC1682J",
+        "typOfNotfdPartyCd" : "PAN",
+        "notfdPartyStreetAddress" : "DIAMOND HARBOUR ROADKANCHOWKI BISHNUPUR 24 PARGANAS SWEST BENGAL 74350",
+        "notfdPartyCity" : "BISHNUPUR",
+        "notfdPartyCntrySubDivName" : "WEST BENGAL",
+        "notfdPartyCntrySubDiv" : "19",
+        "notfdPartyCntryCd" : "IN",
+        "notfdPartyPstcd" : "743503",
+        "goodsDescAsPerBl" : "07X20 ISOTANK CONTAINER  STC PHENOL BULK HS CODE  290711 IMCO 6.1 PG II UN  NO 2312 IEC 0288037243  GST 19AABCC1682J1ZJ PAN  AABCC1682J"
+      },
+      "trnsprtDocMsr" : {
+        "nmbrOfPkgs" : 7,
+        "typsOfPkgs" : "PKG",
+        "marksNoOnPkgs" : "NM",
+        "grossWeight" : 154700.0,
+        "unitOfWeight" : "KGS"
+      },
+      "itemDtls" : [ {
+        "crgoItemSeqNmbr" : 1,
+        "hsCd" : "290711",
+        "crgoItemDesc" : "PHENOL BULK6.1 UN NO: 2312 PG : II HSCODE : 290711,PHENOL BULK6.1 UN NO: 2312 PG : II HSCODE : 290711,PHENOL BULK6.1 UN NO: 2312 PG : II HSCODE : 290711,PHENOL BULK6.1 UN NO: 2312 PG : II HSCODE : 290711,PHENOL BULK6.1 UN NO: 2312 PG : II HSCODE : 290711,P",
+        "unoCd" : "2312",
+        "imdgCd" : "6.1",
+        "nmbrOfPkgs" : 7,
+        "typOfPkgs" : "PKG"
+      } ],
+      "trnsprtEqmt" : [ {
+        "eqmtSeqNo" : 1,
+        "eqmtId" : "EOLU8247376",
+        "eqmtTyp" : "CN",
+        "eqmtSize" : "2270",
+        "eqmtLoadStatus" : "FCL",
+        "eqmtSealNmbr" : "0165490",
+        "socFlag" : "N",
+        "cntrAgntCd" : "AAACO2555K",
+        "cntrWeight" : 22040.0,
+        "totalNmbrOfPkgs" : 1
+      }, {
+        "eqmtSeqNo" : 2,
+        "eqmtId" : "EOLU8285226",
+        "eqmtTyp" : "CN",
+        "eqmtSize" : "2270",
+        "eqmtLoadStatus" : "FCL",
+        "eqmtSealNmbr" : "0165520",
+        "socFlag" : "N",
+        "cntrAgntCd" : "AAACO2555K",
+        "cntrWeight" : 22050.0,
+        "totalNmbrOfPkgs" : 1
+      }, {
+        "eqmtSeqNo" : 3,
+        "eqmtId" : "EOLU8252942",
+        "eqmtTyp" : "CN",
+        "eqmtSize" : "2270",
+        "eqmtLoadStatus" : "FCL",
+        "eqmtSealNmbr" : "0165517",
+        "socFlag" : "N",
+        "cntrAgntCd" : "AAACO2555K",
+        "cntrWeight" : 22020.0,
+        "totalNmbrOfPkgs" : 1
+      }, {
+        "eqmtSeqNo" : 4,
+        "eqmtId" : "EOLU8273565",
+        "eqmtTyp" : "CN",
+        "eqmtSize" : "2270",
+        "eqmtLoadStatus" : "FCL",
+        "eqmtSealNmbr" : "0165487",
+        "socFlag" : "N",
+        "cntrAgntCd" : "AAACO2555K",
+        "cntrWeight" : 22120.0,
+        "totalNmbrOfPkgs" : 1
+      }, {
+        "eqmtSeqNo" : 5,
+        "eqmtId" : "EOLU8220400",
+        "eqmtTyp" : "CN",
+        "eqmtSize" : "2270",
+        "eqmtLoadStatus" : "FCL",
+        "eqmtSealNmbr" : "0165514",
+        "socFlag" : "N",
+        "cntrAgntCd" : "AAACO2555K",
+        "cntrWeight" : 22040.0,
+        "totalNmbrOfPkgs" : 1
+      }, {
+        "eqmtSeqNo" : 6,
+        "eqmtId" : "EOLU8286433",
+        "eqmtTyp" : "CN",
+        "eqmtSize" : "2270",
+        "eqmtLoadStatus" : "FCL",
+        "eqmtSealNmbr" : "0165307",
+        "socFlag" : "N",
+        "cntrAgntCd" : "AAACO2555K",
+        "cntrWeight" : 22370.0,
+        "totalNmbrOfPkgs" : 1
+      }, {
+        "eqmtSeqNo" : 7,
+        "eqmtId" : "EOLU8239576",
+        "eqmtTyp" : "CN",
+        "eqmtSize" : "2270",
+        "eqmtLoadStatus" : "FCL",
+        "eqmtSealNmbr" : "0165340",
+        "socFlag" : "N",
+        "cntrAgntCd" : "AAACO2555K",
+        "cntrWeight" : 22060.0,
+        "totalNmbrOfPkgs" : 1
+      } ],
+      "itnry" : [ {
+        "prtOfCallSeqNmbr" : 1,
+        "prtOfCallCdd" : "ZADUR",
+        "prtOfCallName" : "Durban",
+        "nxtPrtOfCallCdd" : "INCCU1",
+        "nxtPrtOfCallName" : "Kolkata",
+        "modeOfTrnsprt" : "1"
+      } ]
+    }, {
+      "MCRef" : {
+        "lineNo" : 3,
+        "mstrBlNo" : "DURCCU95251",
+        "mstrBlDt" : "20250803",
+        "consolidatedIndctr" : "S",
+        "prevDec" : "N",
+        "consolidatorPan" : "PAN:AAACO2555K"
+      },
+      "locCstm" : {
+        "firstPrtOfEntry" : "INCCU1",
+        "destPrt" : "INCCU1CIL2",
+        "nxtPrtOfUnlading" : "INCCU1",
+        "typOfCrgo" : "IM",
+        "itemTyp" : "OT",
+        "crgoMvmt" : "LC",
+        "natrOfCrgo" : "C"
+      },
+      "trnshpr" : {
+        "trnshprBond" : "2002381469"
+      },
+      "trnsprtDoc" : {
+        "prtOfAcptCdd" : "ZADUR",
+        "prtOfAcptName" : "Durban",
+        "prtOfReceiptCdd" : "INCCU1",
+        "prtOfReceiptName" : "Kolkata",
+        "cnsgnrsName" : "SASOL CHEMICALS A DIVISION OF SASOL",
+        "cnsgnrStreetAddress" : "SOUTH AFRICA LTDCOMPANY REG NO 196801391406 VAT REG NO 4430113102 PO B",
+        "cnsgnrCity" : "JOHANNESBURG",
+        "cnsgnrCntrySubDivName" : "JOHANNESBURG",
+        "cnsgnrCntryCd" : "ZA",
+        "cnsgnrPstcd" : "5486",
+        "cnsgnesName" : "CENTURY PLYBOARDS I LTD",
+        "cnsgnesCd" : "AABCC1682J",
+        "typOfCd" : "PAN",
+        "cnsgneStreetAddress" : "DIAMOND HARBOUR ROADKANCHOWKI BISHNUPUR 24 PARGANAS SWEST BENGAL 74350",
+        "cnsgneCity" : "BISHNUPUR",
+        "cnsgneCntrySubDivName" : "WEST BENGAL",
+        "cnsgneCntrySubDiv" : "19",
+        "cnsgneCntryCd" : "IN",
+        "cnsgnePstcd" : "743503",
+        "nameOfAnyOtherNotfdParty" : "CENTURY PLYBOARDS I LTD",
+        "panOfNotfdParty" : "AABCC1682J",
+        "typOfNotfdPartyCd" : "PAN",
+        "notfdPartyStreetAddress" : "DIAMOND HARBOUR ROADKANCHOWKI BISHNUPUR 24 PARGANAS SWEST BENGAL 74350",
+        "notfdPartyCity" : "BISHNUPUR",
+        "notfdPartyCntrySubDivName" : "WEST BENGAL",
+        "notfdPartyCntrySubDiv" : "19",
+        "notfdPartyCntryCd" : "IN",
+        "notfdPartyPstcd" : "743503",
+        "goodsDescAsPerBl" : "04X20 ISOTANK CONTAINER  STC PHENOL BULK HS CODE  290711 IMCO 6.1 PG II UN  NO 2312 IEC 0288037243  GST 19AABCC1682J1ZJ PAN  AABCC1682J"
+      },
+      "trnsprtDocMsr" : {
+        "nmbrOfPkgs" : 4,
+        "typsOfPkgs" : "PKG",
+        "marksNoOnPkgs" : "NM",
+        "grossWeight" : 88880.0,
+        "unitOfWeight" : "KGS"
+      },
+      "itemDtls" : [ {
+        "crgoItemSeqNmbr" : 1,
+        "hsCd" : "290711",
+        "crgoItemDesc" : "PHENOL BULK6.1 UN NO: 2312 PG : II HSCODE : 290711,PHENOL BULK6.1 UN NO: 2312 PG : II HSCODE : 290711,PHENOL BULK6.1 UN NO: 2312 PG : II HSCODE : 290711,PHENOL BULK6.1 UN NO: 2312 PG : II HSCODE : 290711",
+        "unoCd" : "2312",
+        "imdgCd" : "6.1",
+        "nmbrOfPkgs" : 4,
+        "typOfPkgs" : "PKG"
+      } ],
+      "trnsprtEqmt" : [ {
+        "eqmtSeqNo" : 1,
+        "eqmtId" : "EOLU8246430",
+        "eqmtTyp" : "CN",
+        "eqmtSize" : "2270",
+        "eqmtLoadStatus" : "FCL",
+        "eqmtSealNmbr" : "0165391",
+        "socFlag" : "N",
+        "cntrAgntCd" : "AAACO2555K",
+        "cntrWeight" : 22370.0,
+        "totalNmbrOfPkgs" : 1
+      }, {
+        "eqmtSeqNo" : 2,
+        "eqmtId" : "EOLU8254570",
+        "eqmtTyp" : "CN",
+        "eqmtSize" : "2270",
+        "eqmtLoadStatus" : "FCL",
+        "eqmtSealNmbr" : "0167269",
+        "socFlag" : "N",
+        "cntrAgntCd" : "AAACO2555K",
+        "cntrWeight" : 22350.0,
+        "totalNmbrOfPkgs" : 1
+      }, {
+        "eqmtSeqNo" : 3,
+        "eqmtId" : "EOLU8271080",
+        "eqmtTyp" : "CN",
+        "eqmtSize" : "2270",
+        "eqmtLoadStatus" : "FCL",
+        "eqmtSealNmbr" : "0167275",
+        "socFlag" : "N",
+        "cntrAgntCd" : "AAACO2555K",
+        "cntrWeight" : 22060.0,
+        "totalNmbrOfPkgs" : 1
+      }, {
+        "eqmtSeqNo" : 4,
+        "eqmtId" : "EOLU8249580",
+        "eqmtTyp" : "CN",
+        "eqmtSize" : "2270",
+        "eqmtLoadStatus" : "FCL",
+        "eqmtSealNmbr" : "0165394",
+        "socFlag" : "N",
+        "cntrAgntCd" : "AAACO2555K",
+        "cntrWeight" : 22100.0,
+        "totalNmbrOfPkgs" : 1
+      } ],
+      "itnry" : [ {
+        "prtOfCallSeqNmbr" : 1,
+        "prtOfCallCdd" : "ZADUR",
+        "prtOfCallName" : "Durban",
+        "nxtPrtOfCallCdd" : "INCCU1",
+        "nxtPrtOfCallName" : "Kolkata",
+        "modeOfTrnsprt" : "1"
+      } ]
+    } ]
+  }
+}
